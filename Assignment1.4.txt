@@ -1,0 +1,19 @@
+Assignment 1.4: Istalling third party libararies(i.e bootstrap) and checking whether it is installed or not.
+
+1. First, Open the Command Prompt.
+2. created a new project with name checkBootstrap by running the command:
+    ng new checkBootstrap and then pressing enter.
+3. Once the checkBootstrap project is created navigate to the project folderby running the command as:
+    cd checkBootstrap
+4. Now run the following command at the command prompt to install bootstrap.
+    npm install --save bootstrap
+5. after successfully installing bootstrap Open the checkBootstrap project folder in visual studio code.Then open the angular-cli.json file associated with the checkBootstrap folder and go to the apps -> styles and type the following:
+    ../node_modules/bootstrap/dist/css/bootstrap.min.css,
+6. Save the above modifications.
+7. Open the index.html file and type the following code:
+    <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="form.invalid">Submit</button>
+                                                                                                      
+8. come back to the command prompt and navigate to the checkBootstrap folder and type:
+     ng serve
+9. Now open the browser and type https://localhost:4200/index.html
+10. The bootstrap output will be displayed on the brower.
